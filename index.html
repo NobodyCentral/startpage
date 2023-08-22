@@ -186,9 +186,11 @@
                 element.innerHTML = dayOfWeek+' 󰍴 '+time+' 󰍴 '+dateStr
             };
 
-            setInterval(setTime, 1000);
+            scriptElement.onload = function() {
+                setInterval(setTime, 1000);
 
-            setTime()
+                setTime()
+            };
         </script>
         <script>
             var Space = {
